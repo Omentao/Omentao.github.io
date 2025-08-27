@@ -66,7 +66,7 @@ disable_top_img: false
 default_top_img:
 
 # The banner image of index page
-index_img:
+index_img: /img/index.jpg
 
 # The banner image of archive page
 archive_img:
@@ -146,24 +146,26 @@ index_site_info_top:
 # The height of top_img, eg: 300px/300em/300rem
 index_top_img_height:
 
-# The subtitle on homepage
+# 主页subtitle
 subtitle:
-  enable: false
-  # Typewriter Effect
+  enable: true
+  # Typewriter Effect (打字效果)
   effect: true
   # Customize typed.js
   # https://github.com/mattboldt/typed.js/#customization
   typed_option:
-  # Source - Call the third-party service API (Chinese only)
-  # It will show the source first, then show the content of sub
-  # Choose: false/1/2/3
-  # false - disable the function
-  # 1 - hitokoto.cn
-  # 2 - https://api.aa1.cn/doc/yiyan.html
-  # 3 - jinrishici.com
+  # source 调用第三方服务
+  # false 关闭调用
+  # 1  调用一言网的一句话（简体） https://hitokoto.cn/
+  # 2  调用一句网（简体） http://yijuzhan.com/
+  # 3  调用今日诗词（简体） https://www.jinrishici.com/
+  # subtitle 会先显示 source , 再显示 sub 的内容
   source: false
-  # If you close the typewriter effect, the subtitle will only show the first line of sub
+  # 如果关闭打字效果，subtitle 只会显示 sub 的第一行文字
   sub:
+    - 从前有一个人
+    - 他很傻
+    - 然后他就变成了一个傻的人
 
 # Article layout on the homepage
 # 1: Cover on the left, info on the right
